@@ -3,75 +3,76 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:onClick="Modificar"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginTop="80dp"
         android:gravity="center"
-        android:textSize="25dp"
-        android:text="Empresa Viaje Feliz" />
+        android:text="Empresa Viaje Feliz"
+        android:textSize="25dp" />
 
     <EditText
-        android:layout_marginTop="10dp"
         android:id="@+id/etcodigo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="25dp"
+        android:hint="Digite codigo viaje"
         android:inputType="textPersonName"
-        android:hint="Digite codigo viaje" />
+        android:textSize="25dp" />
 
     <EditText
-        android:layout_marginTop="10dp"
         android:id="@+id/etnombre"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="25dp"
+        android:hint="Digite nombre responsable"
         android:inputType="textPersonName"
-        android:hint="Digite nombre responsable" />
+        android:textSize="25dp" />
 
     <EditText
-        android:layout_marginTop="10dp"
         android:id="@+id/etciudad"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="25dp"
+        android:hint="Digite ciudad destino"
         android:inputType="textPersonName"
-        android:hint="Digite ciudad destino" />
+        android:textSize="25dp" />
 
     <EditText
-        android:layout_marginTop="10dp"
         android:id="@+id/etcantidad"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="25dp"
+        android:hint="Cantidad de personas"
         android:inputType="number"
-        android:hint="Cantidad de personas" />
+        android:textSize="25dp" />
 
     <CheckBox
         android:id="@+id/cbactivo"
         android:layout_width="150dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="40dp"
-        android:textSize="25dp"
-        android:enabled="false"
         android:layout_height="wrap_content"
-        android:text=" Activo" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:text=" Activo"
+        android:textSize="25dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,10 +93,10 @@
             android:id="@+id/btadicionar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="adicionar"
             android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="Adicionar" />
+            android:onClick="adicionar"
+            android:text="Adicionar"
+            android:textSize="25dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -109,14 +110,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="Modificar" />
+            android:onClick="Modificar"
+            android:text="Modificar"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/bteliminar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="Eliminar"
             android:text="Eliminar"
             android:textSize="25dp" />
 
@@ -133,8 +136,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="25dp"
-            android:text="Anular" />
+            android:onClick="Anular"
+            android:text="Anular"
+            android:textSize="25dp" />
 
         <Button
             android:id="@+id/btcancelar"
