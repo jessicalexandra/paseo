@@ -150,4 +150,15 @@
             android:textSize="25dp" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btlistar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Listar"
+        android:text="Consulta general"
+        android:textSize="25sp"
+
+        app:cornerRadius="20dp" />
+
 </LinearLayout>
